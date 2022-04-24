@@ -1,0 +1,31 @@
+{
+  "name": "pptr-mocha",
+  "version": "1.0.0",
+  "description": "Puppeteer-mocha-builder-page-object-tests-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./build/tests/**.js",
+    "clear": "rm -rf build",
+    "build": "babel --preset es2015 -d build/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubanenkos/Puppeteer-mocha-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubanenkos/Puppeteer-mocha-tests/issues"
+  },
+  "homepage": "https://github.com/rubanenkos/Puppeteer-mocha-tests#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "mocha-steps": "^1.3.0",
+    "puppeteer": "^13.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
